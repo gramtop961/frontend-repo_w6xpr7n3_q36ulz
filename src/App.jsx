@@ -1,28 +1,41 @@
-import { useState } from 'react'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import AboutCube from './components/AboutCube';
+import CaseStudies from './components/CaseStudies';
+import CTA from './components/CTA';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Footer() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <footer id="contact" className="border-t border-white/10 bg-slate-950">
+      <div className="mx-auto max-w-7xl px-6 py-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex items-center gap-3">
+          <div className="h-8 w-8 rounded-md bg-gradient-to-br from-cyan-500 to-indigo-500" />
+          <div>
+            <p className="text-white font-semibold">TechCube</p>
+            <p className="text-slate-400 text-sm">© {new Date().getFullYear()} All rights reserved.</p>
+          </div>
+        </div>
+        <div className="text-slate-400 text-sm">
+          Built for scale — security, reliability, and performance first.
         </div>
       </div>
-    </div>
-  )
+    </footer>
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-inter">
+      <Navbar />
+      <main>
+        <Hero />
+        <Features />
+        <AboutCube />
+        <CaseStudies />
+        <CTA />
+      </main>
+      <Footer />
+    </div>
+  );
+}
