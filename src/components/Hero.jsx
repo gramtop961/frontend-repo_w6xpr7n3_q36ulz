@@ -3,13 +3,13 @@ import Spline from '@splinetool/react-spline';
 export default function Hero() {
   return (
     <section id="hero" className="relative h-[85vh] min-h-[560px] w-full overflow-hidden bg-slate-950">
-      {/* Spline scene: Tech Cube as main focus */}
+      {/* Spline scene: Glossy Tech Cube arrangement */}
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/Z4mFOe-VPbTX4W76/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
       {/* Soft gradient overlays that don't block interaction */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(37,99,235,0.18),transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(56,189,248,0.14),transparent_60%)]" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/10 to-slate-950/90" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-6 text-center">
@@ -21,7 +21,7 @@ export default function Hero() {
           Modular intelligence at the core of your stack
         </h1>
         <p className="mt-6 max-w-2xl text-base sm:text-lg text-slate-300">
-          A secure, scalable foundation built around a dynamic 3D tech cube — orchestrating cloud, AI, and data services with precision.
+          A glossy constellation of cubes forming a single system — orchestrating cloud, AI, and data with precision on a secure, scalable foundation.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center gap-3">
           <a href="#cta" className="inline-flex items-center rounded-lg bg-gradient-to-r from-cyan-600 to-indigo-600 px-6 py-3 text-white font-medium shadow-lg shadow-blue-950/40 hover:from-cyan-500 hover:to-indigo-500">
